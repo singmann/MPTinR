@@ -1,0 +1,1 @@
+load("bugs/named.matrix.rda")make.mdt(d1, "bugs/test.mdt")

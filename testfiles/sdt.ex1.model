@@ -1,0 +1,16 @@
+
+pnorm((cr1-mu1)/ss1)
+pnorm(((cr1+cr2)-mu1)/ss1) - pnorm((cr1-mu1)/ss1)
+pnorm(((cr1+cr2+cr3)-mu1)/ss1) - pnorm(((cr1+cr2)-mu1)/ss1)
+1-pnorm(((cr1+cr2+cr3)-mu1)/ss1)
+
+pnorm((cr1-mu2)/ss2)
+pnorm(((cr1+cr2)-mu2)/ss2) - pnorm((cr1-mu2)/ss2)
+pnorm(((cr1+cr2+cr3)-mu2)/ss2) - pnorm(((cr1+cr2)-mu2)/ss2)
+1-pnorm(((cr1+cr2+cr3)-mu2)/ss2)
+
+pnorm(cr1)
+pnorm(cr1+cr2) - pnorm(cr1)
+pnorm(cr1+cr2+cr3) - pnorm(cr1+cr2)
+1-pnorm(cr1+cr2+cr3)
+

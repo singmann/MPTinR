@@ -1,0 +1,13 @@
+Package: MPTinR2
+Type: Package
+Title: Analyze Multinomial Processing Tree Models
+Version: 0.2.0
+Date: 2011-12-21
+Author: Henrik Singmann, David Kellen, and Karl Christoph Klauer
+Maintainer: Henrik Singmann <henrik.singmann@psychologie.uni-freiburg.de>
+Description: This is a completely new version of a package for the analysis of multinomial processing tree (MPT) models (e.g.,  Riefer, D. M., and Batchelder, W. H. [1988]. Multinomial modeling and the measurement of cognitive processes. Psychological Review, 95, 318-339) for individual and multi-individual data. This version is based on formal S4 classes and methods and contains a EM fitting algorithm written in Fortran. However, this version is still under heavy development, but the fitting is already functional and a lot faster. See ?fit.mpt and ?make.mpt for more details.
+URL: http://www.psychologie.uni-freiburg.de/Members/singmann/R/mptinr
+License: GPL (>= 2)
+Depends: R (>= 2.11.0), methods, numDeriv
+Suggests: snowfall (>= 1.84)
+LazyLoad: yes

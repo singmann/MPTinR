@@ -1,0 +1,40 @@
+
+2011-12-21
+		* helper.functions.R: moved functions for make.mpt to 
+		  make.mpt.helper.R
+
+		* make.mpt(): added diverse generic functions
+
+		* read.model.R: added function that comments are no handled 
+		  normally (i.e., everythin gright to # is skipped, NOT the 
+		  whole line).
+		
+		* read.model.R: added .read.MPT.restrictions.file() and 
+		  .read.mpt(). These arw rappers for opening the files and
+		  handing over a connection (read.mpt) or the restrictions list.
+		
+		* mpt.classes.R: added classes to deal with connectionOrNull
+		
+		* make.mpt.Rd: added the descriptions and examples for the new features.
+		
+		* fit.mpt.Rd: added example with model via textConnection
+
+2011-12-14
+		* make.mpt(): changed to a generic
+
+		* Further change to the fortran files (all open and write 
+		  statements are commented out), compiling checked on win 7
+
+2011-12-12
+		* fit.mpt.Rd updated examples to make use of make.mpt()
+
+		* Changed the fortran files to suppress creating output files.
+
+		* Changed DESCRIPTION to inform about the difference to MPTinR (1).
+
+		* resolved small bug that prevented using fit.mpt with a model object.
+
+2011-10-21
+
+		* First Version of the new MPTinR (for now called MPTinR2)
+		

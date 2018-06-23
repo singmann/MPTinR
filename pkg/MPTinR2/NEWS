@@ -1,0 +1,52 @@
+					***************************
+					** MPTinR2 VERSION 0.2.0 **
+					***************************
+					
+					Changes in MPTinR Version 0.1.0
+					Released December 2011
+
+	Significant User Visible Changes
+	
+	o	make.mpt() is now a generic and allows to specify the model via a file
+		(as before) or a connection (i.e., you can specify the model in your R script).
+		See the examples in make.mpt()
+		
+	o	Similarly, you can specify the restrictions via a restrictions file or connection 
+		or as a list of characters (see also the examples).
+
+	o	Comments should now be handled as in other programs. Everything right to a # will
+		be skipped (and NOT the whole line).
+		
+	o	All these changes to make.mpt follow input from Meik Michalke (University of Düssedorf)
+		
+	
+	New Features / Bugfixes
+	
+	o	Should give an error if a constant (in a restriction) is outside [0,1].
+
+					***************************
+					** MPTinR2 VERSION 0.1.0 **
+					***************************
+					
+					Changes in MPTinR Version 0.1.0
+					Released October 2011
+
+	Significant User Visible Changes
+	
+	o	MPTinR is now based on S4 classes and methods. There exists visible classes for
+		models (bmpt.model and mpt.model) and the results (bmpt and mpt), furthermore 
+		invisible classes for the restrictions.
+
+	o	fit.mpt() remains to be the main function that can (when called with a 
+		model.filename as the model argument) create a model file (via a call to
+		make.model()). Based on which type of model, either a member of L-BMPT 
+		(Purdy & Batchelder, 2009) or not, a method for fitting is selected
+		(dispatched). Most new features require models being member of L-BMPT.
+		
+	
+	New Features / Bugfixes
+	
+	o	generate.data(): A function to generate random or predicted data from either 
+		a model and paramters (using a .model object) or a fitted model (bmpt or mpt object).
+		
+
