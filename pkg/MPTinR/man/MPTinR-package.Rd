@@ -22,11 +22,6 @@ A helper function for writing model files is \code{\link{check.mpt}}
 
 
 }
-\author{
-\packageAuthor{MPTinR}
-
-Maintainer: \packageMaintainer{MPTinR}
-}
 \references{
 Riefer, D. M., & Batchelder, W. H. (1988). Multinomial modeling and the measurement of cognitive processes. \emph{Psychological Review}, 95, 318-339
 
