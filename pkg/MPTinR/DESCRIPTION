@@ -1,9 +1,9 @@
 Package: MPTinR
 Type: Package
 Title: Analyze Multinomial Processing Tree Models
-Version: 1.11.0
+Version: 1.12.0
 Authors@R: c(person("Henrik", "Singmann", role = c("aut", "cre"),
-    email = "singmann+mptinr@gmail.com"),
+    email = "singmann@gmail.com"),
     person("David", "Kellen", role =  "aut"),
     person("Quentin", "Gronau", role =  "aut"),
     person("Christian", "Mueller", role =  "ctb"),

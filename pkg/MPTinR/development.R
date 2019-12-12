@@ -1,4 +1,5 @@
 require(devtools)
+clean_dll()
 load_all()
 
 data(rb.fig1.data, package = "MPTinR")
