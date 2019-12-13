@@ -30,3 +30,6 @@ compileAttributes() # DO NOT RUN THIS. It changes the names to determinant (with
 devtools::use_vignette("introduction")
 
 devtools::build_vignettes()
+
+devtools::build(path = "../../../")
+  
