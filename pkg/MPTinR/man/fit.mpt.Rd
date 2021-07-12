@@ -29,7 +29,7 @@ fit.mpt(
 
 \arguments{
   \item{data}{
-Either a \emph{numeric} \code{vector} for individual fit or a \emph{numeric} \code{matrix} or \code{data.frame} for multi-individual fit. The data on each position (column for multi-individual fit) must correspond to the respective line in the model file. Fitting for multiple individuals can be parallelized via \code{multicore}.
+Either a \emph{numeric} \code{vector} for individual fit or a \emph{numeric} \code{matrix} or \code{data.frame} for multi-individual fit. The data on each position (column for multi-individual fit) must correspond to the respective line in the model file. For EQN model files, the required order is given by an alphabetic ordering of first model names than categories. This order in terms of the names in the EQN file can be obtained through \code{\link{check.mpt}}. Fitting for multiple individuals can be parallelized via \code{multicore}.
 }
   \item{model.filename}{
 A character \code{vector} specifying the location and name of the model file. 
@@ -89,6 +89,8 @@ logical. Should the Hessian matrix of the maximum likelihood estimates be estima
 \details{
 The model file is either of the easy format or the "classical" EQN format (see below).\cr
 In the easy format (the default) the model file contains all trees of the model. Trees are separated by at least one empty line. Everything to the right of a hash (#) is ignored (this behavior is new since version 0.9.2). Lines starting with a # are treated as empty. Each line in each tree corresponds to all branches of this tree (concatenated by a +) that correspond to one of the possible response categories. The position of each line must correspond to the position of this response category in the data object (for multi-individual fit to the respective column).
+
+For EQN model files the order of the data does NOT correspond to the order in the model file, but to the order given by first sorting the tree names alphabetically/numerically and than the category names within the trees. As this is often difficult to see if the EQN files contains names and not numbers for trees and categories, \code{\link{check.mpt}} returns the order of both trees and categories for EQN model files.
 
 The difference between both types of EQN format (\code{"eqn"} or\code{"eqn2"}) is the way the first line of the model file is treated. If \code{model.file} is set to \code{"eqn"}, \code{MPTinR} will ignore the first line of the model file and will read the rest of the file (as does multiTree; Moshagen, 2010). If \code{model.file} is set to \code{"eqn2"} MPTinR will only read as many lines as indicated in the first line of the EQN model file (as does e.g., HMMTree; Stahl & Klauer, 2007). As default \code{fit.mpt} expects the easy format, but if the filename ends with .eqn or .EQN and \code{model.type} is \code{"easy"}, \code{model.type} is set to \code{"eqn"}\cr
 For the EQN format consult one of the corresponding papers (see e.g., Moshagen, 2010; Stahl & Klauer, 2007). The positions in the data object (number of column for multi-individual fit) must correspond to the category number in the EQN file.\cr
