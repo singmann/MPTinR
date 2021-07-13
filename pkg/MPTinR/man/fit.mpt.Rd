@@ -183,7 +183,7 @@ Broeder, A., & Schuetz, J. (2009). Recognition ROCs are curvilinear-or are they?
 
 Byrd, R. H., Lu, P., Nocedal, J., & Zhu, C. (1995). A limited memory algorithm for bound constrained optimization. \emph{SIAM J. Scientific Computing}, 16, 1190-1208.
 
-Fox, P. A., Hall, A. P., & Schryer, N. L. (1978). The PORT Mathematical Subroutine Library. \emph{CM Trans. Math. Softw.}, 4, 104-126. \url{http://doi.acm.org/10.1145/355780.355783}
+Fox, P. A., Hall, A. P., & Schryer, N. L. (1978). The PORT Mathematical Subroutine Library. \emph{CM Trans. Math. Softw.}, 4, 104-126. \doi{10.1145/355780.355783}
 
 Knapp, B. R., & Batchelder, W. H. (2004). Representing parametric order constraints in multi-trial applications of multinomial processing tree models. \emph{Journal of Mathematical Psychology}, 48, 215-229.
 
